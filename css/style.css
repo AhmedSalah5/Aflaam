@@ -331,7 +331,6 @@ footer .last{
     position: fixed;
     top: 150px;
     left: 50%;
-    transform: translateX(-50%);
     background: #c0f1b7;
     color: #095719;
     padding: 20px;
@@ -341,16 +340,15 @@ footer .last{
     z-index: 100;
     font-size: 28px;
     transition: all 0.4s;
-    transform: scale(0);
+    transform:translateX(-50%) scale(0);
 }
 .message.show{
-    transform: scale(1);
+    transform:translateX(-50%) scale(1);
 }
 .error{
     position: fixed;
     top: 150px;
     left: 50%;
-    transform: translateX(-50%);
     background: #f1c7b7;
     color: #570f09;
     padding: 20px;
@@ -360,10 +358,10 @@ footer .last{
     z-index: 100;
     font-size: 28px;
     transition: all 0.4s;
-    transform: scale(0);
+    transform:translateX(-50%) scale(0);
 }
 .error.show{
-    transform: scale(1);
+    transform: translateX(-50%) scale(1);
 }
 body.fixed{
     overflow: hidden;
